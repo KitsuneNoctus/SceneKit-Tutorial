@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/NaitoHarmonia/Documents/MAKE-SCHOOL/Term 2 Year 2/SUP 2.1/ray-wend-SceneKitTutorial/GeometryFighter/GeometryFighter/GeometryFighter.scnassets">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

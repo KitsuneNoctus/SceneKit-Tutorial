@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "AppIcon.afdesign",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
