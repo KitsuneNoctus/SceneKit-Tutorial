@@ -66,18 +66,21 @@ class GameViewController: UIViewController {
     
     //MARK: Spawn
     func spawnShape() {
-      // 1
-      var geometry:SCNGeometry
-      // 2
-      switch ShapeType.random() {
-      default:
-        // 3
-        geometry = SCNBox(width: 1.0, height: 1.0, length: 1.0, chamferRadius: 0.0)
-      }
-      // 4
-      let geometryNode = SCNNode(geometry: geometry)
-      // 5
-      scnScene.rootNode.addChildNode(geometryNode)
+        // 1
+        var geometry:SCNGeometry
+        // 2
+        switch ShapeType.random() {
+        default:
+            // 3
+            geometry = SCNBox(width: 1.0, height: 1.0, length: 1.0, chamferRadius: 0.0)
+            geometry.firstMaterial?.diffuse.contents = UIColor.blue
+        }
+        // 4
+        let geometryNode = SCNNode(geometry: geometry)
+        // 5
+        geometryNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+        
+        scnScene.rootNode.addChildNode(geometryNode)
     }
     
 }
